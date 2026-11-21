@@ -21,7 +21,6 @@ public class FormAuthentication {
         WebElement formAuth = driver.findElement(By.linkText("Form Authentication"));
         formAuth.click();
     }
-
     @Test(priority = 1)
     public void validLogin(){
         WebElement userName = driver.findElement(By.cssSelector("input[id='username']"));
