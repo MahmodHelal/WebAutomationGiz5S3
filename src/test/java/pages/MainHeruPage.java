@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import pages.formPackage.FormAuthenticationPage;
+import pages.waitingStratefies.DynamicControlsPage;
 import pages.waitingStratefies.DynamicLoadingPage;
 
 public class MainHeruPage {
@@ -31,6 +32,10 @@ public class MainHeruPage {
     public DynamicLoadingPage goToDynamicLoadingPage(){
         driver.findElement(By.linkText("Dynamic Loading")).click();
         return new DynamicLoadingPage(driver);
+    }
+    public DynamicControlsPage goToDynamicControlsPage(){
+        driver.findElement(By.linkText("Dynamic Controls")).click();
+        return new DynamicControlsPage(driver);
     }
 
 }

@@ -10,6 +10,7 @@ import pages.DropdownPage;
 import pages.MainHeruPage;
 import pages.formPackage.FormAuthenticationPage;
 import pages.formPackage.SecureAreaPage;
+import pages.waitingStratefies.DynamicControlsPage;
 import pages.waitingStratefies.DynamicLoadingPage;
 import pages.waitingStratefies.FirstDynamicPage;
 import pages.waitingStratefies.SecondDynamicPage;
@@ -26,6 +27,7 @@ public class BaseTest {
     protected DynamicLoadingPage dynamicLoadingPage;
     protected FirstDynamicPage firstDynamicPage;
     protected SecondDynamicPage secondDynamicPage;
+    protected DynamicControlsPage dynamicControlsPage;
 
     @BeforeClass
     public void setUp() {
